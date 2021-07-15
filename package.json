@@ -2,6 +2,7 @@
   "name": "cpc-mobile",
   "version": "0.0.1",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "@capacitor/app": "1.0.2",
     "@capacitor/core": "3.1.1",
@@ -19,6 +20,7 @@
     "@types/react-dom": "^16.9.10",
     "@types/react-router": "^5.1.11",
     "@types/react-router-dom": "^5.1.7",
+    "copy-files-from-to": "^3.2.0",
     "ionicons": "^5.4.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -44,7 +46,17 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "buildCopy": "yarn build && yarn copy-files-from-to"
+  },
+  "copyFiles": [
+    {
+      "from": "build/**/*",
+      "to": "../cpc-server/public"
+    }
+  ],
+  "copyFilesSettings": {
+    "whenFileExists": "overwrite"
   },
   "eslintConfig": {
     "extends": [

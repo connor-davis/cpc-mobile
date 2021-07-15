@@ -1,2 +1,3 @@
-# resuseit
-This project was started due to the lack of actual value to collecting recyclable waste.
+# CPC Mobile
+
+This project was started due to the need for anti-crime organizations needs for a "fake-news"less way of communicating.
